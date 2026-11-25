@@ -2,18 +2,18 @@
 """Fridge Roast: One Line, Biggest Laugh -- make.fun entry.
 
 Writes one line (<= 200 characters) roasting a smart fridge to
-<output>/entry.txt: the fridge knew the milk expired on Tuesday, told me
-on Friday, and enjoys the suspense.
+<output>/entry.txt: a smart fridge with a touchscreen, a camera, and
+opinions about my cheese -- but no ice.
 """
 
 import os
 import sys
 
-# The line: three escalating beats -- the fridge knows the milk expired,
-# it tells me days late, and the twist is that it enjoys the suspense.
-# A roast aimed at the fridge's opinions about my milk, specific to a
-# "smart" fridge and tight at 93 characters.
-LINE = "My smart fridge knows the milk expired on Tuesday. It told me Friday. It enjoys the suspense."
+# The line: a three-item list of smart features (touchscreen, camera,
+# opinions about cheese) undercut by the punchline -- the one thing it
+# doesn't have is ice. A roast of feature bloat vs core failure,
+# specific to a "smart" fridge and tight at 103 characters.
+LINE = "My smart fridge has a touchscreen, a camera, and opinions about my cheese. What it doesn't have is ice."
 
 def main() -> int:
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
